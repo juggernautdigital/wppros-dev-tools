@@ -100,14 +100,14 @@ class Wpproz_Dev_Tools_Public {
 
 	}
 
-}
+	public function wpproz_dev_tools() {
+	 $html = '';
+		$html .= '<!-- Start dev tools -->';
+		$html .= '<div id="media_query_dev_tool"><span></span></div>';
+		$html .= '<!-- End dev tools -->';
+		echo $html;
+	}
 
-function wpproz_dev_tools() {
- $html = '';
-	$html .= '<!-- Start dev tools -->';
-	$html .= '<div id="media_query_dev_tool"><span></span></div>';
-	$html .= '<!-- End dev tools -->';
-	echo $html;
-}
 
-add_action( 'wp_footer', 'wpproz_dev_tools' );
+
+}
