@@ -1,0 +1,39 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ #media_query_dev_tool {
+   position:fixed;
+   bottom:0;
+   left:0;
+   background-color:#000;
+   color:#fff;
+   padding:10px;
+   font-size: 14px;
+ }
+
+  #media_query_dev_tool span {
+    font-weight: 700;
+
+  }
+
+ #media_query_dev_tool:before {
+margin-right: 10px;
+     content: 'Current Query Size: [ XS ]';
+ }
+ @media (min-width: 40em) {
+     #media_query_dev_tool:before {
+         content: 'Current Query Size: [ SM ]' !important;
+     }
+ }
+ @media (min-width: 60em) {
+     #media_query_dev_tool:before {
+         content: 'Current Query Size: [ MD ]' !important;
+     }
+ }
+ @media (min-width: 74em) {
+     #media_query_dev_tool:before {
+         content: 'Current Query Size: [ LG ]' !important;
+     }
+ }
