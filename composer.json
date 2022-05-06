@@ -1,0 +1,13 @@
+{
+    "name": "juggernautdigital/wpproz-dev-tools",
+    "description": "",
+    "keywords": [
+      "wordpress",
+      "plugin"
+    ],
+    "homepage": "https://github.com/juggernautdigital/wpproz-dev-tools",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">7.3"
+    }
+}
