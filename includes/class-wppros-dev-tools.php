@@ -70,7 +70,7 @@ class Wpproz_Dev_Tools {
 		if ( defined( 'WPPROS_DEV_TOOLS_VERSION' ) ) {
 			$this->version = WPPROS_DEV_TOOLS_VERSION;
 		} else {
-			$this->version = '1.1.1';
+			$this->version = '2.0.0';
 		}
 		$this->plugin_name = 'wpproz-dev-tools';
 
