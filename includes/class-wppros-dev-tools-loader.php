@@ -21,7 +21,7 @@
  * @subpackage Wpproz_Dev_Tools/includes
  * @author     WP-Proz <support@wp-proz.com>
  */
-class Wpproz_Dev_Tools_Loader {
+class Wppros_Dev_Tools_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

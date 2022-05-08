@@ -27,7 +27,7 @@
  * @subpackage Wpproz_Dev_Tools/includes
  * @author     WP-Proz <support@wp-proz.com>
  */
-class Wpproz_Dev_Tools {
+class Wppros_Dev_Tools {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Wpproz_Dev_Tools {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Wpproz_Dev_Tools_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Wppros_Dev_Tools_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -122,7 +122,7 @@ class Wpproz_Dev_Tools {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wppros-dev-tools-public.php';
 
-		$this->loader = new Wpproz_Dev_Tools_Loader();
+		$this->loader = new Wppros_Dev_Tools_Loader();
 
 	}
 
@@ -137,7 +137,7 @@ class Wpproz_Dev_Tools {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Wpproz_Dev_Tools_i18n();
+		$plugin_i18n = new Wppros_Dev_Tools_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -152,7 +152,7 @@ class Wpproz_Dev_Tools {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Wpproz_Dev_Tools_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Wppros_Dev_Tools_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -168,7 +168,7 @@ class Wpproz_Dev_Tools {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Wpproz_Dev_Tools_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Wppros_Dev_Tools_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -200,7 +200,7 @@ class Wpproz_Dev_Tools {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Wpproz_Dev_Tools_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Wppros_Dev_Tools_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

@@ -20,7 +20,7 @@
  * @subpackage Wpproz_Dev_Tools/public
  * @author     WP-Proz <support@wp-proz.com>
  */
-class Wpproz_Dev_Tools_Public {
+class Wppros_Dev_Tools_Public {
 
 	/**
 	 * The ID of this plugin.

@@ -42,7 +42,7 @@ define( 'WPPROS_DEV_TOOLS_VERSION', '2.0.0' );
  */
 function activate_wppros_dev_tools() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wppros-dev-tools-activator.php';
-	Wpproz_Dev_Tools_Activator::activate();
+	Wppros_Dev_Tools_Activator::activate();
 }
 
 /**
@@ -51,7 +51,7 @@ function activate_wppros_dev_tools() {
  */
 function deactivate_wppros_dev_tools() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wppros-dev-tools-deactivator.php';
-	Wpproz_Dev_Tools_Deactivator::deactivate();
+	Wppros_Dev_Tools_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_wppros_dev_tools' );
@@ -74,7 +74,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wppros-dev-tools.php';
  */
 function run_wppros_dev_tools() {
 
-	$plugin = new Wpproz_Dev_Tools();
+	$plugin = new Wppros_Dev_Tools();
 	$plugin->run();
 
 }

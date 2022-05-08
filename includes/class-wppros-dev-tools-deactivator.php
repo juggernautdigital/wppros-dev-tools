@@ -20,7 +20,7 @@
  * @subpackage Wpproz_Dev_Tools/includes
  * @author     WP-Proz <support@wp-proz.com>
  */
-class Wpproz_Dev_Tools_Deactivator {
+class Wppros_Dev_Tools_Deactivator {
 
 	/**
 	 * Short Description. (use period)
