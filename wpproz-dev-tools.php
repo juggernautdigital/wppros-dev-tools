@@ -13,7 +13,7 @@
  * @package           Wpproz_Dev_Tools
  *
  * @wordpress-plugin
- * Plugin Name:       WP-Proz Dev Tools
+ * Plugin Name:       WP-Pros Dev Tools
  * Plugin URI:        https://www.wp-proz.com/wp-plugins/dev-tools
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
