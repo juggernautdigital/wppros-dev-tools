@@ -16,7 +16,7 @@
  * Plugin Name:       WP-Pros Dev Tools
  * Plugin URI:        https://www.wp-pros.co.uk/wp-plugins/dev-tools
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           1.1.1
  * Author:            WP-Proz
  * Author URI:        https://www.wp-pros.co.uk
  * License:           GPL-2.0+
