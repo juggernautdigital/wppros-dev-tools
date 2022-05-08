@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://www.wp-pros.com
- * @since             1.0.0
+ * @since             1.1.1
  * @package           Wppros_Dev_Tools
  *
  * @wordpress-plugin
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WPPROS_DEV_TOOLS_VERSION', '1.0.0' );
+define( 'WPPROS_DEV_TOOLS_VERSION', '1.1.1' );
 
 /**
  * The code that runs during plugin activation.
