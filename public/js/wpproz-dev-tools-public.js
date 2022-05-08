@@ -59,17 +59,17 @@ $(document).ready(function() {
 	  );
 	 }
 
-	 var wpprozsw = getWidth();
+	 var wpprossw = getWidth();
 
-	 var result = parseInt( wpprozsw ) / parseInt( 16 );
+	 var result = parseInt( wpprossw ) / parseInt( 16 );
 
 	 $("#media_query_dev_tool span").html(getWidth() + "px" + " " + result + "em");
 
 	 $(window).resize(function() {
 	 	 // do something here
 
-		 var wpprozsw = getWidth();
-		 var result = parseInt( wpprozsw ) / parseInt( 16 );
+		 var wpprossw = getWidth();
+		 var result = parseInt( wpprossw ) / parseInt( 16 );
 
 	 	 $("#media_query_dev_tool span").html(getWidth() + "px" + " " + result + "em");
 	 });

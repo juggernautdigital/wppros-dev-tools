@@ -72,7 +72,7 @@ class Wpproz_Dev_Tools {
 		} else {
 			$this->version = '2.0.0';
 		}
-		$this->plugin_name = 'wpproz-dev-tools';
+		$this->plugin_name = 'wppros-dev-tools';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -103,24 +103,24 @@ class Wpproz_Dev_Tools {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wpproz-dev-tools-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wppros-dev-tools-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wpproz-dev-tools-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wppros-dev-tools-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wpproz-dev-tools-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wppros-dev-tools-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wpproz-dev-tools-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wppros-dev-tools-public.php';
 
 		$this->loader = new Wpproz_Dev_Tools_Loader();
 

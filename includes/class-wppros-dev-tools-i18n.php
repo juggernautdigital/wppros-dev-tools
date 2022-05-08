@@ -35,7 +35,7 @@ class Wpproz_Dev_Tools_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'wpproz-dev-tools',
+			'wppros-dev-tools',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

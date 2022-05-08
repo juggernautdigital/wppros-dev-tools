@@ -39,19 +39,19 @@ define( 'WPPROS_DEV_TOOLS_VERSION', '2.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-wpproz-dev-tools-activator.php
+ * This action is documented in includes/class-wppros-dev-tools-activator.php
  */
 function activate_wppros_dev_tools() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpproz-dev-tools-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wppros-dev-tools-activator.php';
 	Wpproz_Dev_Tools_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-wpproz-dev-tools-deactivator.php
+ * This action is documented in includes/class-wppros-dev-tools-deactivator.php
  */
 function deactivate_wppros_dev_tools() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpproz-dev-tools-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wppros-dev-tools-deactivator.php';
 	Wpproz_Dev_Tools_Deactivator::deactivate();
 }
 
@@ -62,7 +62,7 @@ register_deactivation_hook( __FILE__, 'deactivate_wppros_dev_tools' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wpproz-dev-tools.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-wppros-dev-tools.php';
 
 /**
  * Begins execution of the plugin.
