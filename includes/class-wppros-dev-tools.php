@@ -67,8 +67,8 @@ class Wpproz_Dev_Tools {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'WPPROZ_DEV_TOOLS_VERSION' ) ) {
-			$this->version = WPPROZ_DEV_TOOLS_VERSION;
+		if ( defined( 'WPPROS_DEV_TOOLS_VERSION' ) ) {
+			$this->version = WPPROS_DEV_TOOLS_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
@@ -172,7 +172,7 @@ class Wpproz_Dev_Tools {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		$this->loader->add_action( 'wp_footer', $plugin_public, 'wpproz_dev_tools' );
+		$this->loader->add_action( 'wp_footer', $plugin_public, 'wppros_dev_tools' );
 
 	}
 

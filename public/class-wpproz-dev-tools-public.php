@@ -100,7 +100,7 @@ class Wpproz_Dev_Tools_Public {
 
 	}
 
-	public function wpproz_dev_tools() {
+	public function wppros_dev_tools() {
 	 $html = '';
 		$html .= '<!-- Start dev tools -->';
 		$html .= '<div id="media_query_dev_tool"><span></span></div>';

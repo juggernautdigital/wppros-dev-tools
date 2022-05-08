@@ -8,20 +8,20 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://www.wp-proz.com
+ * @link              https://www.wp-pros.com
  * @since             1.0.0
- * @package           Wpproz_Dev_Tools
+ * @package           Wppros_Dev_Tools
  *
  * @wordpress-plugin
  * Plugin Name:       WP-Pros Dev Tools
- * Plugin URI:        https://www.wp-proz.com/wp-plugins/dev-tools
+ * Plugin URI:        https://www.wp-pros.co.uk/wp-plugins/dev-tools
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
  * Author:            WP-Proz
- * Author URI:        https://www.wp-proz.com
+ * Author URI:        https://www.wp-pros.co.uk
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       wpproz-dev-tools
+ * Text Domain:       wppros-dev-tools
  * Domain Path:       /languages
  */
 
@@ -35,13 +35,13 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WPPROZ_DEV_TOOLS_VERSION', '1.0.0' );
+define( 'WPPROS_DEV_TOOLS_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-wpproz-dev-tools-activator.php
  */
-function activate_wpproz_dev_tools() {
+function activate_wppros_dev_tools() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpproz-dev-tools-activator.php';
 	Wpproz_Dev_Tools_Activator::activate();
 }
@@ -50,13 +50,13 @@ function activate_wpproz_dev_tools() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-wpproz-dev-tools-deactivator.php
  */
-function deactivate_wpproz_dev_tools() {
+function deactivate_wppros_dev_tools() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpproz-dev-tools-deactivator.php';
 	Wpproz_Dev_Tools_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_wpproz_dev_tools' );
-register_deactivation_hook( __FILE__, 'deactivate_wpproz_dev_tools' );
+register_activation_hook( __FILE__, 'activate_wppros_dev_tools' );
+register_deactivation_hook( __FILE__, 'deactivate_wppros_dev_tools' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wpproz-dev-tools.php';
  *
  * @since    1.0.0
  */
-function run_wpproz_dev_tools() {
+function run_wppros_dev_tools() {
 
 	$plugin = new Wpproz_Dev_Tools();
 	$plugin->run();
 
 }
-run_wpproz_dev_tools();
+run_wppros_dev_tools();
