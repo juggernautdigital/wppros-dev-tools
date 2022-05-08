@@ -1,11 +1,12 @@
 {
-    "name": "juggernautdigital/wpproz-dev-tools",
+    "name": "juggernautdigital/wppros-dev-tools",
     "description": "",
+    "version": "1.1.0",
     "keywords": [
       "wordpress",
       "plugin"
     ],
-    "homepage": "https://github.com/juggernautdigital/wpproz-dev-tools",
+    "homepage": "https://github.com/juggernautdigital/wppros-dev-tools",
     "type": "wordpress-plugin",
     "require": {
         "php": ">7.3"
